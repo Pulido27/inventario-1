@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulido</title>
+</head>
+<body>
+
+<h1>Abarrotes Pulido</h1>
+
+    <form>
+        <label>Agregar producto</label><br><br>
+        
+        <label>Codigo</label>
+        <input type="text" name="codigo" id="codigo" placeholder="codigo"><br><br>
+
+        <label>Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="nombre"><br><br>
+
+        <label>Cantidad</label>
+        <input type="text" name="cantidad" id="cantidad" placeholder="cantidad"><br><br
+
+        <label>Costo</label>
+        <input type="text" name="costo" id="costo" placeholder="costo"><br><br>
+        <button type="button" onclick="agregar2()">Agregar</button> <br> <br>
+
+        <label>Eliminar producto</label><br><br>
+        <input type="text" name="eliminar" id="eliminar" placeholder="codigo">
+        <button type="button" onclick="eliminar2()">eliminar</button> <br><br>
+
+        <label>Buscar producto</label><br><br>
+        <input type="text" name="buscar" id="buscar" placeholder="codigo">
+        <button type="button" onclick="buscar2()">buscar</button> <br><br>
+
+        <table id="buscarProductos" border="1";>
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Cantidad</th>
+                <th>Costo</th>
+            </tr>
+        
+        </table>
+        <br><br>
+    
+        <button type="button" onclick="listar()">Listar Inventario</button> <br><br>
+
+        <table id="productos" border="1";>
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Cantidad</th>
+                <th>Costo</th>
+            </tr>
+        
+        </table>
+        <br><br>
+
+        
+        <button type="button" onclick="listarInvert()">Listar Inventario Inverso</button> <br><br>
+
+        <table id="productos2" border="1";>
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Cantidad</th>
+                <th>Costo</th>
+            </tr>
+        </table>
+
+
+    
+    </form>
+
+<script src="main.js" ></script>
+</body>
+</html>
