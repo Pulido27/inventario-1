@@ -52,35 +52,6 @@ class Inventario{
         return(vi);
     }
 
-    modificar(codigo,aspecto,cambio){
-        let i = 0;
-        let flag = 0;
-        while(flag==0){
-           if(codigo==this.inventario[i].codigo){
-            
-            switch(aspecto){
-                case "codigo":
-                    this.inventario[i].codigo = cambio;
-                    break;
-                case "nombre":
-                    this.inventario[i].nombre = cambio;
-                    break;
-                case "cantidad":
-                    this.inventario[i].cantidad = cambio;
-                    break;
-                case "costo":
-                    this.inventario[i].costo = cambio;
-                    break;
-            }
-
-            flag=1;
-            }else if(i>this.inventario.length){
-                flag=1;
-            }
-           i++;
-        }
-    }
-
 }
 
 class Producto{
@@ -201,14 +172,6 @@ x.forEach(p => {
 
 tablaproducto.appendChild(cuerpotabla);
 }
-
-
-function modificar2(){
-        
-}
-
-
-
 
 
 let guitarra =  new Producto("2xp3","guitarra",4,60);
